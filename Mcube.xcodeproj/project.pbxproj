@@ -1,0 +1,495 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		808249EB18A57CF8000C3761 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 808249EA18A57CF8000C3761 /* Foundation.framework */; };
+		808249ED18A57CF8000C3761 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 808249EC18A57CF8000C3761 /* CoreGraphics.framework */; };
+		808249EF18A57CF8000C3761 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 808249EE18A57CF8000C3761 /* UIKit.framework */; };
+		808249F518A57CF8000C3761 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 808249F318A57CF8000C3761 /* InfoPlist.strings */; };
+		808249F718A57CF8000C3761 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 808249F618A57CF8000C3761 /* main.m */; };
+		808249FB18A57CF8000C3761 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 808249FA18A57CF8000C3761 /* AppDelegate.m */; };
+		808249FE18A57CF8000C3761 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 808249FC18A57CF8000C3761 /* Main_iPhone.storyboard */; };
+		80824A0118A57CF8000C3761 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 808249FF18A57CF8000C3761 /* Main_iPad.storyboard */; };
+		80824A0418A57CF8000C3761 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80824A0318A57CF8000C3761 /* FirstViewController.m */; };
+		80824A0718A57CF8000C3761 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80824A0618A57CF8000C3761 /* SecondViewController.m */; };
+		80824A0918A57CF8000C3761 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80824A0818A57CF8000C3761 /* Images.xcassets */; };
+		80824A1018A57CF8000C3761 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80824A0F18A57CF8000C3761 /* XCTest.framework */; };
+		80824A1118A57CF8000C3761 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 808249EA18A57CF8000C3761 /* Foundation.framework */; };
+		80824A1218A57CF8000C3761 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 808249EE18A57CF8000C3761 /* UIKit.framework */; };
+		80824A1A18A57CF8000C3761 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 80824A1818A57CF8000C3761 /* InfoPlist.strings */; };
+		80824A1C18A57CF8000C3761 /* McubeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 80824A1B18A57CF8000C3761 /* McubeTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		80824A1318A57CF8000C3761 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 808249DF18A57CF8000C3761 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 808249E618A57CF8000C3761;
+			remoteInfo = Mcube;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		808249E718A57CF8000C3761 /* Mcube.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mcube.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		808249EA18A57CF8000C3761 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		808249EC18A57CF8000C3761 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		808249EE18A57CF8000C3761 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		808249F218A57CF8000C3761 /* Mcube-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Mcube-Info.plist"; sourceTree = "<group>"; };
+		808249F418A57CF8000C3761 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		808249F618A57CF8000C3761 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		808249F818A57CF8000C3761 /* Mcube-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Mcube-Prefix.pch"; sourceTree = "<group>"; };
+		808249F918A57CF8000C3761 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		808249FA18A57CF8000C3761 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		808249FD18A57CF8000C3761 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		80824A0018A57CF8000C3761 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		80824A0218A57CF8000C3761 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		80824A0318A57CF8000C3761 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		80824A0518A57CF8000C3761 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		80824A0618A57CF8000C3761 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		80824A0818A57CF8000C3761 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		80824A0E18A57CF8000C3761 /* McubeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = McubeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		80824A0F18A57CF8000C3761 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		80824A1718A57CF8000C3761 /* McubeTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "McubeTests-Info.plist"; sourceTree = "<group>"; };
+		80824A1918A57CF8000C3761 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		80824A1B18A57CF8000C3761 /* McubeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = McubeTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		808249E418A57CF8000C3761 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				808249ED18A57CF8000C3761 /* CoreGraphics.framework in Frameworks */,
+				808249EF18A57CF8000C3761 /* UIKit.framework in Frameworks */,
+				808249EB18A57CF8000C3761 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80824A0B18A57CF8000C3761 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80824A1018A57CF8000C3761 /* XCTest.framework in Frameworks */,
+				80824A1218A57CF8000C3761 /* UIKit.framework in Frameworks */,
+				80824A1118A57CF8000C3761 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		808249DE18A57CF8000C3761 = {
+			isa = PBXGroup;
+			children = (
+				808249F018A57CF8000C3761 /* Mcube */,
+				80824A1518A57CF8000C3761 /* McubeTests */,
+				808249E918A57CF8000C3761 /* Frameworks */,
+				808249E818A57CF8000C3761 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		808249E818A57CF8000C3761 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				808249E718A57CF8000C3761 /* Mcube.app */,
+				80824A0E18A57CF8000C3761 /* McubeTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		808249E918A57CF8000C3761 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				808249EA18A57CF8000C3761 /* Foundation.framework */,
+				808249EC18A57CF8000C3761 /* CoreGraphics.framework */,
+				808249EE18A57CF8000C3761 /* UIKit.framework */,
+				80824A0F18A57CF8000C3761 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		808249F018A57CF8000C3761 /* Mcube */ = {
+			isa = PBXGroup;
+			children = (
+				808249F918A57CF8000C3761 /* AppDelegate.h */,
+				808249FA18A57CF8000C3761 /* AppDelegate.m */,
+				808249FC18A57CF8000C3761 /* Main_iPhone.storyboard */,
+				808249FF18A57CF8000C3761 /* Main_iPad.storyboard */,
+				80824A0218A57CF8000C3761 /* FirstViewController.h */,
+				80824A0318A57CF8000C3761 /* FirstViewController.m */,
+				80824A0518A57CF8000C3761 /* SecondViewController.h */,
+				80824A0618A57CF8000C3761 /* SecondViewController.m */,
+				80824A0818A57CF8000C3761 /* Images.xcassets */,
+				808249F118A57CF8000C3761 /* Supporting Files */,
+			);
+			path = Mcube;
+			sourceTree = "<group>";
+		};
+		808249F118A57CF8000C3761 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				808249F218A57CF8000C3761 /* Mcube-Info.plist */,
+				808249F318A57CF8000C3761 /* InfoPlist.strings */,
+				808249F618A57CF8000C3761 /* main.m */,
+				808249F818A57CF8000C3761 /* Mcube-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		80824A1518A57CF8000C3761 /* McubeTests */ = {
+			isa = PBXGroup;
+			children = (
+				80824A1B18A57CF8000C3761 /* McubeTests.m */,
+				80824A1618A57CF8000C3761 /* Supporting Files */,
+			);
+			path = McubeTests;
+			sourceTree = "<group>";
+		};
+		80824A1618A57CF8000C3761 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				80824A1718A57CF8000C3761 /* McubeTests-Info.plist */,
+				80824A1818A57CF8000C3761 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		808249E618A57CF8000C3761 /* Mcube */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 80824A1F18A57CF8000C3761 /* Build configuration list for PBXNativeTarget "Mcube" */;
+			buildPhases = (
+				808249E318A57CF8000C3761 /* Sources */,
+				808249E418A57CF8000C3761 /* Frameworks */,
+				808249E518A57CF8000C3761 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Mcube;
+			productName = Mcube;
+			productReference = 808249E718A57CF8000C3761 /* Mcube.app */;
+			productType = "com.apple.product-type.application";
+		};
+		80824A0D18A57CF8000C3761 /* McubeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 80824A2218A57CF8000C3761 /* Build configuration list for PBXNativeTarget "McubeTests" */;
+			buildPhases = (
+				80824A0A18A57CF8000C3761 /* Sources */,
+				80824A0B18A57CF8000C3761 /* Frameworks */,
+				80824A0C18A57CF8000C3761 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				80824A1418A57CF8000C3761 /* PBXTargetDependency */,
+			);
+			name = McubeTests;
+			productName = McubeTests;
+			productReference = 80824A0E18A57CF8000C3761 /* McubeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		808249DF18A57CF8000C3761 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Schubert Cardozo";
+				TargetAttributes = {
+					80824A0D18A57CF8000C3761 = {
+						TestTargetID = 808249E618A57CF8000C3761;
+					};
+				};
+			};
+			buildConfigurationList = 808249E218A57CF8000C3761 /* Build configuration list for PBXProject "Mcube" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 808249DE18A57CF8000C3761;
+			productRefGroup = 808249E818A57CF8000C3761 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				808249E618A57CF8000C3761 /* Mcube */,
+				80824A0D18A57CF8000C3761 /* McubeTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		808249E518A57CF8000C3761 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80824A0118A57CF8000C3761 /* Main_iPad.storyboard in Resources */,
+				80824A0918A57CF8000C3761 /* Images.xcassets in Resources */,
+				808249FE18A57CF8000C3761 /* Main_iPhone.storyboard in Resources */,
+				808249F518A57CF8000C3761 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80824A0C18A57CF8000C3761 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80824A1A18A57CF8000C3761 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		808249E318A57CF8000C3761 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80824A0718A57CF8000C3761 /* SecondViewController.m in Sources */,
+				808249FB18A57CF8000C3761 /* AppDelegate.m in Sources */,
+				80824A0418A57CF8000C3761 /* FirstViewController.m in Sources */,
+				808249F718A57CF8000C3761 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80824A0A18A57CF8000C3761 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80824A1C18A57CF8000C3761 /* McubeTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		80824A1418A57CF8000C3761 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 808249E618A57CF8000C3761 /* Mcube */;
+			targetProxy = 80824A1318A57CF8000C3761 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		808249F318A57CF8000C3761 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				808249F418A57CF8000C3761 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		808249FC18A57CF8000C3761 /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				808249FD18A57CF8000C3761 /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		808249FF18A57CF8000C3761 /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				80824A0018A57CF8000C3761 /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		80824A1818A57CF8000C3761 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				80824A1918A57CF8000C3761 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		80824A1D18A57CF8000C3761 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		80824A1E18A57CF8000C3761 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		80824A2018A57CF8000C3761 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Mcube/Mcube-Prefix.pch";
+				INFOPLIST_FILE = "Mcube/Mcube-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		80824A2118A57CF8000C3761 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Mcube/Mcube-Prefix.pch";
+				INFOPLIST_FILE = "Mcube/Mcube-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		80824A2318A57CF8000C3761 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Mcube.app/Mcube";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Mcube/Mcube-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "McubeTests/McubeTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		80824A2418A57CF8000C3761 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Mcube.app/Mcube";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Mcube/Mcube-Prefix.pch";
+				INFOPLIST_FILE = "McubeTests/McubeTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		808249E218A57CF8000C3761 /* Build configuration list for PBXProject "Mcube" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				80824A1D18A57CF8000C3761 /* Debug */,
+				80824A1E18A57CF8000C3761 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		80824A1F18A57CF8000C3761 /* Build configuration list for PBXNativeTarget "Mcube" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				80824A2018A57CF8000C3761 /* Debug */,
+				80824A2118A57CF8000C3761 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		80824A2218A57CF8000C3761 /* Build configuration list for PBXNativeTarget "McubeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				80824A2318A57CF8000C3761 /* Debug */,
+				80824A2418A57CF8000C3761 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 808249DF18A57CF8000C3761 /* Project object */;
+}
