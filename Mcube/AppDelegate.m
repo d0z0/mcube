@@ -7,12 +7,35 @@
 //
 
 #import "AppDelegate.h"
+#import <Parse/Parse.h>
+#import "ArtistListViewController.h"
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    
+    [Parse setApplicationId:@"rtXmpWUjbxjSNVejzk17KdwO2dx8fgT9TAolbBG4"
+                  clientKey:@"bAhSfcVzD3580kXgk7DH4DFrphIH0AH1vOSWNUnR"];
+
+    [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
+
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] ;
+    UITabBarController *mainTabBar = [[UITabBarController alloc] init];
+    [mainTabBar setDelegate:self];
+    
+    ArtistListViewController *artistViewController = [[ArtistListViewController alloc] init];
+    
+    UINavigationController *artistNavigation = [[UINavigationController alloc] initWithRootViewController:artistViewController];
+    
+    [mainTabBar setViewControllers:@[artistNavigation]];
+    self.window.rootViewController = mainTabBar;
+    
+    [self.window makeKeyAndVisible];
+    // quick test with 3 bands
+    
+    
     return YES;
 }
 							

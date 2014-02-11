@@ -13,16 +13,23 @@
 		808249F518A57CF8000C3761 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 808249F318A57CF8000C3761 /* InfoPlist.strings */; };
 		808249F718A57CF8000C3761 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 808249F618A57CF8000C3761 /* main.m */; };
 		808249FB18A57CF8000C3761 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 808249FA18A57CF8000C3761 /* AppDelegate.m */; };
-		808249FE18A57CF8000C3761 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 808249FC18A57CF8000C3761 /* Main_iPhone.storyboard */; };
-		80824A0118A57CF8000C3761 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 808249FF18A57CF8000C3761 /* Main_iPad.storyboard */; };
-		80824A0418A57CF8000C3761 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80824A0318A57CF8000C3761 /* FirstViewController.m */; };
-		80824A0718A57CF8000C3761 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80824A0618A57CF8000C3761 /* SecondViewController.m */; };
 		80824A0918A57CF8000C3761 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80824A0818A57CF8000C3761 /* Images.xcassets */; };
 		80824A1018A57CF8000C3761 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80824A0F18A57CF8000C3761 /* XCTest.framework */; };
 		80824A1118A57CF8000C3761 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 808249EA18A57CF8000C3761 /* Foundation.framework */; };
 		80824A1218A57CF8000C3761 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 808249EE18A57CF8000C3761 /* UIKit.framework */; };
 		80824A1A18A57CF8000C3761 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 80824A1818A57CF8000C3761 /* InfoPlist.strings */; };
 		80824A1C18A57CF8000C3761 /* McubeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 80824A1B18A57CF8000C3761 /* McubeTests.m */; };
+		80824A2718A57DBE000C3761 /* ArtistListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80824A2618A57DBE000C3761 /* ArtistListViewController.m */; };
+		808BB5C918A8ED0300156740 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 808BB5C818A8ED0300156740 /* Parse.framework */; };
+		808BB5D318A8ED7000156740 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 808BB5CA18A8ED7000156740 /* AudioToolbox.framework */; };
+		808BB5D418A8ED7000156740 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 808BB5CB18A8ED7000156740 /* CFNetwork.framework */; };
+		808BB5D518A8ED7000156740 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 808BB5CC18A8ED7000156740 /* CoreLocation.framework */; };
+		808BB5D618A8ED7000156740 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 808BB5CD18A8ED7000156740 /* libz.dylib */; };
+		808BB5D718A8ED7000156740 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 808BB5CE18A8ED7000156740 /* MobileCoreServices.framework */; };
+		808BB5D818A8ED7000156740 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 808BB5CF18A8ED7000156740 /* QuartzCore.framework */; };
+		808BB5D918A8ED7000156740 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 808BB5D018A8ED7000156740 /* Security.framework */; };
+		808BB5DA18A8ED7000156740 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 808BB5D118A8ED7000156740 /* StoreKit.framework */; };
+		808BB5DB18A8ED7000156740 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 808BB5D218A8ED7000156740 /* SystemConfiguration.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,18 +53,24 @@
 		808249F818A57CF8000C3761 /* Mcube-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Mcube-Prefix.pch"; sourceTree = "<group>"; };
 		808249F918A57CF8000C3761 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		808249FA18A57CF8000C3761 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		808249FD18A57CF8000C3761 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
-		80824A0018A57CF8000C3761 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
-		80824A0218A57CF8000C3761 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		80824A0318A57CF8000C3761 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
-		80824A0518A57CF8000C3761 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		80824A0618A57CF8000C3761 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		80824A0818A57CF8000C3761 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		80824A0E18A57CF8000C3761 /* McubeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = McubeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		80824A0F18A57CF8000C3761 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		80824A1718A57CF8000C3761 /* McubeTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "McubeTests-Info.plist"; sourceTree = "<group>"; };
 		80824A1918A57CF8000C3761 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		80824A1B18A57CF8000C3761 /* McubeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = McubeTests.m; sourceTree = "<group>"; };
+		80824A2518A57DBE000C3761 /* ArtistListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArtistListViewController.h; sourceTree = "<group>"; };
+		80824A2618A57DBE000C3761 /* ArtistListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArtistListViewController.m; sourceTree = "<group>"; };
+		808BB5C818A8ED0300156740 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		808BB5CA18A8ED7000156740 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		808BB5CB18A8ED7000156740 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		808BB5CC18A8ED7000156740 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		808BB5CD18A8ED7000156740 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		808BB5CE18A8ED7000156740 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		808BB5CF18A8ED7000156740 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		808BB5D018A8ED7000156740 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		808BB5D118A8ED7000156740 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		808BB5D218A8ED7000156740 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,8 +78,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				808BB5D318A8ED7000156740 /* AudioToolbox.framework in Frameworks */,
+				808BB5D418A8ED7000156740 /* CFNetwork.framework in Frameworks */,
+				808BB5D518A8ED7000156740 /* CoreLocation.framework in Frameworks */,
+				808BB5D618A8ED7000156740 /* libz.dylib in Frameworks */,
+				808BB5D718A8ED7000156740 /* MobileCoreServices.framework in Frameworks */,
+				808BB5D818A8ED7000156740 /* QuartzCore.framework in Frameworks */,
+				808BB5D918A8ED7000156740 /* Security.framework in Frameworks */,
+				808BB5DA18A8ED7000156740 /* StoreKit.framework in Frameworks */,
+				808BB5DB18A8ED7000156740 /* SystemConfiguration.framework in Frameworks */,
 				808249ED18A57CF8000C3761 /* CoreGraphics.framework in Frameworks */,
 				808249EF18A57CF8000C3761 /* UIKit.framework in Frameworks */,
+				808BB5C918A8ED0300156740 /* Parse.framework in Frameworks */,
 				808249EB18A57CF8000C3761 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -106,6 +129,16 @@
 		808249E918A57CF8000C3761 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				808BB5CA18A8ED7000156740 /* AudioToolbox.framework */,
+				808BB5CB18A8ED7000156740 /* CFNetwork.framework */,
+				808BB5CC18A8ED7000156740 /* CoreLocation.framework */,
+				808BB5CD18A8ED7000156740 /* libz.dylib */,
+				808BB5CE18A8ED7000156740 /* MobileCoreServices.framework */,
+				808BB5CF18A8ED7000156740 /* QuartzCore.framework */,
+				808BB5D018A8ED7000156740 /* Security.framework */,
+				808BB5D118A8ED7000156740 /* StoreKit.framework */,
+				808BB5D218A8ED7000156740 /* SystemConfiguration.framework */,
+				808BB5C818A8ED0300156740 /* Parse.framework */,
 				808249EA18A57CF8000C3761 /* Foundation.framework */,
 				808249EC18A57CF8000C3761 /* CoreGraphics.framework */,
 				808249EE18A57CF8000C3761 /* UIKit.framework */,
@@ -119,14 +152,10 @@
 			children = (
 				808249F918A57CF8000C3761 /* AppDelegate.h */,
 				808249FA18A57CF8000C3761 /* AppDelegate.m */,
-				808249FC18A57CF8000C3761 /* Main_iPhone.storyboard */,
-				808249FF18A57CF8000C3761 /* Main_iPad.storyboard */,
-				80824A0218A57CF8000C3761 /* FirstViewController.h */,
-				80824A0318A57CF8000C3761 /* FirstViewController.m */,
-				80824A0518A57CF8000C3761 /* SecondViewController.h */,
-				80824A0618A57CF8000C3761 /* SecondViewController.m */,
 				80824A0818A57CF8000C3761 /* Images.xcassets */,
 				808249F118A57CF8000C3761 /* Supporting Files */,
+				80824A2518A57DBE000C3761 /* ArtistListViewController.h */,
+				80824A2618A57DBE000C3761 /* ArtistListViewController.m */,
 			);
 			path = Mcube;
 			sourceTree = "<group>";
@@ -236,9 +265,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				80824A0118A57CF8000C3761 /* Main_iPad.storyboard in Resources */,
 				80824A0918A57CF8000C3761 /* Images.xcassets in Resources */,
-				808249FE18A57CF8000C3761 /* Main_iPhone.storyboard in Resources */,
 				808249F518A57CF8000C3761 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -258,10 +285,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				80824A0718A57CF8000C3761 /* SecondViewController.m in Sources */,
 				808249FB18A57CF8000C3761 /* AppDelegate.m in Sources */,
-				80824A0418A57CF8000C3761 /* FirstViewController.m in Sources */,
 				808249F718A57CF8000C3761 /* main.m in Sources */,
+				80824A2718A57DBE000C3761 /* ArtistListViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,22 +316,6 @@
 				808249F418A57CF8000C3761 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		808249FC18A57CF8000C3761 /* Main_iPhone.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				808249FD18A57CF8000C3761 /* Base */,
-			);
-			name = Main_iPhone.storyboard;
-			sourceTree = "<group>";
-		};
-		808249FF18A57CF8000C3761 /* Main_iPad.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				80824A0018A57CF8000C3761 /* Base */,
-			);
-			name = Main_iPad.storyboard;
 			sourceTree = "<group>";
 		};
 		80824A1818A57CF8000C3761 /* InfoPlist.strings */ = {
@@ -398,6 +408,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/schubert/Code/private/Mcube,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Mcube/Mcube-Prefix.pch";
 				INFOPLIST_FILE = "Mcube/Mcube-Info.plist";
@@ -411,6 +425,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/schubert/Code/private/Mcube,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Mcube/Mcube-Prefix.pch";
 				INFOPLIST_FILE = "Mcube/Mcube-Info.plist";
@@ -480,6 +498,7 @@
 				80824A2118A57CF8000C3761 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		80824A2218A57CF8000C3761 /* Build configuration list for PBXNativeTarget "McubeTests" */ = {
 			isa = XCConfigurationList;
@@ -488,6 +507,7 @@
 				80824A2418A57CF8000C3761 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
