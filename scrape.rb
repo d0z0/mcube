@@ -24,8 +24,9 @@ end
 
 bands_json = File.read("./IN.json")
 bands = JSON.parse(bands_json)['aaData']
-puts "Found #{bands.length} bands..."
-bands[0..0].each do |band|
+puts "Found #{bands.length} bands!"
+bands[93..-1].each_with_index do |band,i|
+  puts "INDEX->#{i}"
   band_name = Nokogiri::HTML.parse(band[0]).text
   band_genres = band[1]
   band_location = band[2]
@@ -63,34 +64,40 @@ bands[0..0].each do |band|
 
   band_id = band_detail_url.split('/').last
   
+  albums = []
+  tracks = []
   # discography 
   # 
   # merge
   discography = Nokogiri::HTML(open("http://www.metal-archives.com/band/discography/id/#{band_id}/tab/all"))
   discography.xpath("//table/tbody/tr").each do |tr|
     album_info = tr.css('td').map{|x| x}
-    album_name = album_info[0].text
-    album_link = album_info[0].at_css('a')['href']
-    album_type = album_info[1].text
-    album_year = album_info[2].text
-    #puts album_link
-    puts album_name
-    #puts album_type
-    #puts album_year
+    album_name = album_info[0].text rescue nil
+    if album_name
+      album_link = album_info[0].at_css('a')['href'] rescue nil
+      album_type = album_info[1].text rescue nil
+      album_year = album_info[2].text rescue nil
+      #puts album_link
+      albums << [album_name, album_type, album_year]
+      #puts album_type
+      #puts album_year
+      tracks_for_album = []
+      if album_link
+        album_tracks = Nokogiri::HTML(open(album_link))
 
-    album_tracks = Nokogiri::HTML(open(album_link))
-    
-    album_tracks.css(".wrapWords").each do |track|
-      puts track.text.gsub("\n","").gsub("\t","")
+        album_tracks.css(".wrapWords").each do |track|
+          tracks_for_album << track.text.gsub("\n","").gsub("\t","")
+        end
+      end
+      tracks << tracks_for_album
     end
-    
-    # albums.each do |album|
-    #   puts album.inspect
-    #   # get tracks
-      
-    # end
+
   end
-  
+
+
+  puts albums.inspect
+  puts tracks.inspect
+  band_info.merge!('albums' => albums, 'tracks' => tracks)
 
   # band stats
   band_stats = data.at_css('#band_stats').xpath('//dd')
@@ -122,6 +129,6 @@ bands[0..0].each do |band|
   band_info.merge!('soundcloud_username' => soundcloud_username[2]) unless soundcloud_username.nil?
   puts soundcloud_username
   
-  # upload(band_info)
+  upload(band_info)
 end
 

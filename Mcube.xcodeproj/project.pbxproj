@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		804373F518AB7853008ECD56 /* ArtistDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 804373F418AB7853008ECD56 /* ArtistDetailViewController.m */; };
 		808249EB18A57CF8000C3761 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 808249EA18A57CF8000C3761 /* Foundation.framework */; };
 		808249ED18A57CF8000C3761 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 808249EC18A57CF8000C3761 /* CoreGraphics.framework */; };
 		808249EF18A57CF8000C3761 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 808249EE18A57CF8000C3761 /* UIKit.framework */; };
@@ -30,6 +31,8 @@
 		808BB5D918A8ED7000156740 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 808BB5D018A8ED7000156740 /* Security.framework */; };
 		808BB5DA18A8ED7000156740 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 808BB5D118A8ED7000156740 /* StoreKit.framework */; };
 		808BB5DB18A8ED7000156740 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 808BB5D218A8ED7000156740 /* SystemConfiguration.framework */; };
+		80E41EFC18AE1A1B007F0D7F /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80E41EFA18AE1A1B007F0D7F /* TestViewController.m */; };
+		80E41EFD18AE1A1B007F0D7F /* TestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80E41EFB18AE1A1B007F0D7F /* TestViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +46,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		804373F318AB7853008ECD56 /* ArtistDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArtistDetailViewController.h; sourceTree = "<group>"; };
+		804373F418AB7853008ECD56 /* ArtistDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArtistDetailViewController.m; sourceTree = "<group>"; };
 		808249E718A57CF8000C3761 /* Mcube.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mcube.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		808249EA18A57CF8000C3761 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		808249EC18A57CF8000C3761 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -71,6 +76,9 @@
 		808BB5D018A8ED7000156740 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		808BB5D118A8ED7000156740 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		808BB5D218A8ED7000156740 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		80E41EF918AE1A1B007F0D7F /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
+		80E41EFA18AE1A1B007F0D7F /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
+		80E41EFB18AE1A1B007F0D7F /* TestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,7 +119,6 @@
 			isa = PBXGroup;
 			children = (
 				808249F018A57CF8000C3761 /* Mcube */,
-				80824A1518A57CF8000C3761 /* McubeTests */,
 				808249E918A57CF8000C3761 /* Frameworks */,
 				808249E818A57CF8000C3761 /* Products */,
 			);
@@ -156,6 +163,12 @@
 				808249F118A57CF8000C3761 /* Supporting Files */,
 				80824A2518A57DBE000C3761 /* ArtistListViewController.h */,
 				80824A2618A57DBE000C3761 /* ArtistListViewController.m */,
+				804373F318AB7853008ECD56 /* ArtistDetailViewController.h */,
+				804373F418AB7853008ECD56 /* ArtistDetailViewController.m */,
+				80824A1518A57CF8000C3761 /* McubeTests */,
+				80E41EF918AE1A1B007F0D7F /* TestViewController.h */,
+				80E41EFA18AE1A1B007F0D7F /* TestViewController.m */,
+				80E41EFB18AE1A1B007F0D7F /* TestViewController.xib */,
 			);
 			path = Mcube;
 			sourceTree = "<group>";
@@ -178,7 +191,7 @@
 				80824A1618A57CF8000C3761 /* Supporting Files */,
 			);
 			path = McubeTests;
-			sourceTree = "<group>";
+			sourceTree = SOURCE_ROOT;
 		};
 		80824A1618A57CF8000C3761 /* Supporting Files */ = {
 			isa = PBXGroup;
@@ -266,6 +279,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				80824A0918A57CF8000C3761 /* Images.xcassets in Resources */,
+				80E41EFD18AE1A1B007F0D7F /* TestViewController.xib in Resources */,
 				808249F518A57CF8000C3761 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -285,9 +299,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				804373F518AB7853008ECD56 /* ArtistDetailViewController.m in Sources */,
 				808249FB18A57CF8000C3761 /* AppDelegate.m in Sources */,
 				808249F718A57CF8000C3761 /* main.m in Sources */,
 				80824A2718A57DBE000C3761 /* ArtistListViewController.m in Sources */,
+				80E41EFC18AE1A1B007F0D7F /* TestViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -364,8 +380,8 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				SDKROOT = iphoneos7.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -397,8 +413,9 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos7.0;
+				TARGETED_DEVICE_FAMILY = 1;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -416,6 +433,7 @@
 				GCC_PREFIX_HEADER = "Mcube/Mcube-Prefix.pch";
 				INFOPLIST_FILE = "Mcube/Mcube-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -433,6 +451,7 @@
 				GCC_PREFIX_HEADER = "Mcube/Mcube-Prefix.pch";
 				INFOPLIST_FILE = "Mcube/Mcube-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

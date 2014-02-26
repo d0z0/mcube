@@ -16,6 +16,8 @@
 {
     UITableView *artistTableView;
     NSArray *artistObjects;
+    NSMutableDictionary *imagesCache;
+
 }
 
 @end

@@ -20,25 +20,33 @@
                   clientKey:@"bAhSfcVzD3580kXgk7DH4DFrphIH0AH1vOSWNUnR"];
 
     [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
-
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] ;
+    
+    
     UITabBarController *mainTabBar = [[UITabBarController alloc] init];
     [mainTabBar setDelegate:self];
     
     ArtistListViewController *artistViewController = [[ArtistListViewController alloc] init];
     
     UINavigationController *artistNavigation = [[UINavigationController alloc] initWithRootViewController:artistViewController];
-    
-    [mainTabBar setViewControllers:@[artistNavigation]];
+    UINavigationController *gigsNavigation = [[UINavigationController alloc] init];
+    gigsNavigation.title = @"Gigs";
+
+    [mainTabBar setViewControllers:@[artistNavigation, gigsNavigation]];
     self.window.rootViewController = mainTabBar;
     
-    [self.window makeKeyAndVisible];
-    // quick test with 3 bands
     
+    [self.window makeKeyAndVisible];
+    
+    [[UITabBar appearance] setTintColor:[UIColor grayColor]];
+    [[UITabBar appearance] setBarStyle:UIBarStyleBlack];
+    [[UINavigationBar appearance] setBarStyle:UIBarStyleBlackTranslucent];
+    [[UINavigationBar appearance] setTintColor:[UIColor darkGrayColor]];
     
     return YES;
 }
-							
+
+
 - (void)applicationWillResignActive:(UIApplication *)application
 {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
