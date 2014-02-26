@@ -11,7 +11,7 @@ def upload(band_info)
   artist_https.use_ssl = true
   artist_req = Net::HTTP::Post.new(artist_parse_uri.path, {'Content-Type' =>'application/json'})
   artist_req['X-Parse-Application-Id'] = 'rtXmpWUjbxjSNVejzk17KdwO2dx8fgT9TAolbBG4'
-  artist_req['X-Parse-REST-API-Key'] = File.read('./api.key')
+  artist_req['X-Parse-REST-API-Key'] = File.read('./parse.api.key')
   artist_req['Content-Type: application/json']
   artist_req.body = band_info.to_json
   artist_res = artist_https.request(artist_req)
